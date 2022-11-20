@@ -1,8 +1,8 @@
 /*
-** EPITECH PROJECT, 2022
-** sfml
+** EPITECH WORKSHOP, 2022
+** CSFML Introduction
 ** File description:
-** main
+** CSFML main
 */
 
 #include "my.h"

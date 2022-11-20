@@ -1,8 +1,8 @@
 ##
-## EPITECH PROJECT, 2020
+## EPITECH WORKSHOP, 2022
 ## Makefile
 ## File description:
-## makefile
+## Root makefile
 ##
 
 SRC				=		src/main.c 									\

@@ -1,5 +1,5 @@
 /*
-** EPITECH PROJECT, 2020
+** EPITECH WORKSHOP, 2022
 ** _MY_H_
 ** File description:
 ** _MY_H_
