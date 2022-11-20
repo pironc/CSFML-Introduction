@@ -1,0 +1,15 @@
+# Program
+*.o
+csfml
+
+# Valgrind
+*.vgcore
+
+# VS Code
+.vscode
+
+# Macos
+.DS_Store
+
+# Other
+corrected
