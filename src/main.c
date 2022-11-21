@@ -11,7 +11,7 @@ int main(void)
 {
     // CSFML Window mandatory variables in order to run a window
     sfVideoMode mode = {1600, 800, 32};
-    sfRenderWindow *window = sfRenderWindow_create(mode, "SFML !", sfClose | sfResize, NULL);
+    sfRenderWindow *window = sfRenderWindow_create(mode, "CSFML !", sfClose | sfResize, NULL);
     sfEvent event;
 
     // Your code goes here (creating new textures, sprites, music, songs...)
