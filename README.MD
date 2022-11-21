@@ -33,12 +33,12 @@ If there are any deprecated functions, you can removed them from the compiled li
 In this first step, you'll have to create and draw an animated duck. There's a sprite-sheet available in the assets folder, but feel free to add your own if you feel like it.
 
 ><details>
->  <summary>Hint</summary>
->  
->  To draw only part of a sprite, you could set its ``` texture rect ```.
->  Maybe this picture could help you understand a bit more?
+> <summary>Hint</summary>
 >
->  ![sprite-sheet](https://raw.githubusercontent.com/pironc/CSFML-Introduction/master/imgs/sprite-sheet.jpg)
+> To draw only part of a sprite, you could set its ``` texture rect ```.  
+> Maybe this picture could help you understand a bit more?
+>
+> ![sprite-sheet](https://raw.githubusercontent.com/pironc/CSFML-Introduction/master/imgs/sprite-sheet.jpg)
 >
 </details>
 
@@ -46,19 +46,35 @@ In this first step, you'll have to create and draw an animated duck. There's a s
 
 It's better to have an actual moving flying duck rather than being stuck in a single position. Could you make him move a bit ? How about going east? Could you make it re appear on the left of the screen after it crossed the right side? Could be neat!
 
-<br>
+><details>
+> <summary>Hint</summary>
+>
+> Could you store your player's position in a ``` sfVector2f ``` and set your new position with it ?  
+> How about a movement vector ?
+>
+</details>
 
 ### Step 3 - Creating a button
 
 I'd like you to make a 3-state button in order to get in the game. When it's idle, when you hover and it a third one when you click on it. There's a beautiful hand-made sprite-sheet, you can even add other ones like the settings or quit button to make it look like a real game!
 
-<br>
+><details>
+> <summary>Hint</summary>
+>
+> Using your sprite's global bounds and knowing the position of your mouse, don't you think you could see if they intersects ?
+>
+</details>
 
 ### Bonus - Pixel-perfect button
 
-Well well well who do we have here. It seems hard at first but I can tell you it isn't. I'd like to be able to click on my button but only when we're on the button itself. Yeah it's pretty fun to make a button, but why are you able to click on the transparent part of a button? Don't just take a rectangle area into account, you might wanna check the RGBA values.
+Well well well who do we have here. It seems hard at first but I can tell you it isn't. I'd like to be able to click on my button but only when we're on the button itself. Yeah it's pretty fun to make a button, but why are you able to click on the transparent part of a button? Don't just take a rectangle area into account, you might wanna check the RGBA values
 
-<br>
+><details>
+> <summary>Hint</summary>
+>
+> There ain't no hints for you think with your little head for once.
+>
+</details>
 
 .....
 
