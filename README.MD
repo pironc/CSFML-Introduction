@@ -32,7 +32,15 @@ If there are any deprecated functions, you can removed them from the compiled li
 
 In this first step, you'll have to create and draw an animated duck. There's a sprite-sheet available in the assets folder, but feel free to add your own if you feel like it.
 
-<br>
+><details>
+>  <summary>Hint</summary>
+>
+>  To draw only part of a sprite, you could set its ``` texture rect ```.
+>  Maybe this picture could help you understand a bit more?
+>
+>  ![sprite-sheet](https://github.com/pironc/CSFML-Introduction/tree/master/imgs/sprite-sheet.jpg?raw=true)
+>
+</details>
 
 ### Step 2 - Movement!
 
