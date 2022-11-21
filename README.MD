@@ -38,7 +38,7 @@ In this first step, you'll have to create and draw an animated duck. There's a s
 >  To draw only part of a sprite, you could set its ``` texture rect ```.
 >  Maybe this picture could help you understand a bit more?
 >
->  ![sprite-sheet](https://github.com/pironc/CSFML-Introduction/tree/master/imgs/sprite-sheet.jpg?raw=true)
+>  ![sprite-sheet](https://raw.githubusercontent.com/pironc/CSFML-Introduction/master/imgs/sprite-sheet.jpg)
 >
 </details>
 
