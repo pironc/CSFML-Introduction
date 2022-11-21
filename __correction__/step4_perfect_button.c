@@ -38,6 +38,7 @@ int main(void)
         mode.width / 2 - play_button_sprite_rect.width / 2,
         mode.height / 2 - play_button_sprite_rect.height / 2
     };
+    sfColor play_button_color = {0, 0, 0, 0};
     sfSprite *play_button_sprite = sfSprite_create();
     sfTexture *play_button_texture = sfTexture_createFromFile("./assets/sprites/buttons_main_menu.png", NULL);
     sfImage *play_button_image = sfTexture_copyToImage(play_button_texture);
@@ -82,16 +83,19 @@ int main(void)
         }
 
         sfFloatRect play_button_bounds = sfSprite_getGlobalBounds(play_button_sprite);
-        sfColor color = sfImage_getPixel(play_button_image,
-        (mouse_pos.x - play_button_position.x) + play_button_sprite_rect.left,
-        (mouse_pos.y - play_button_position.y) + play_button_sprite_rect.top);
-        if (sfFloatRect_contains(&play_button_bounds, mouse_pos.x, mouse_pos.y) && color.a != 0) {
-            if (sfMouse_isButtonPressed(sfMouseLeft)) {
-                play_button_sprite_rect.left = 920;
-                duck_position.x = 0;
-                // Do action (change scene, modify score, kill duck...)
+        if (sfFloatRect_contains(&play_button_bounds, mouse_pos.x, mouse_pos.y)) {
+            play_button_color = sfImage_getPixel(play_button_image, (mouse_pos.x - play_button_position.x) + play_button_sprite_rect.left, (mouse_pos.y - play_button_position.y) + play_button_sprite_rect.top);
+
+            if (play_button_color.a != 0) {
+                if (sfMouse_isButtonPressed(sfMouseLeft)) {
+                    play_button_sprite_rect.left = 920;
+                    duck_position.x = 0;
+                    // Do action (change scene, modify score, kill duck...)
+                } else {
+                    play_button_sprite_rect.left = 460;
+                }
             } else {
-                play_button_sprite_rect.left = 460;
+                play_button_sprite_rect.left = 0;
             }
             sfSprite_setTextureRect(play_button_sprite, play_button_sprite_rect);
         } else {
