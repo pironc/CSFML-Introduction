@@ -33,8 +33,8 @@ If there are any deprecated functions, you can removed them from the compiled li
 In this first step, you'll have to create and draw an animated duck. There's a sprite-sheet available in the assets folder, but feel free to add your own if you feel like it.
 
 ><details>
->  <summary>Hint</summary>  
->
+>  <summary>Hint</summary>
+>  
 >  To draw only part of a sprite, you could set its ``` texture rect ```.
 >  Maybe this picture could help you understand a bit more?
 >
